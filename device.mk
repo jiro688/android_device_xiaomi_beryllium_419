@@ -89,6 +89,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
+# Matlog
+ifeq ($(TARGET_BUILD_VARIANT),user)
+TARGET_DISABLE_MATLOG := true
+endif
+
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
