@@ -105,3 +105,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # WiFi
 PRODUCT_PACKAGES += \
     TargetWifiOverlay
+
+# Priv-keys
+-include vendor/lineage-priv/keys/keys.mk
